@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Ravindhar/docker-react -f Dockerfile.dev .
+  - docker build -t ravindhar/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Ravindhar/docker-react npm run test
+  - docker run -e CI=true ravindhar/docker-react npm run test
